@@ -11,16 +11,14 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UM COS420 with React Hooks and TypeScript
             </header>
-            <hr></hr>
-            <Counter></Counter>
             <hr />
-            <RevealAnswer></RevealAnswer>
+            <Counter />
             <hr />
-            <TwoDice></TwoDice>
+            <RevealAnswer />
             <hr />
-            <ChangeType></ChangeType>
+            <TwoDice />
+            <hr />
+            <ChangeType />
         </div>
     );
 }
-
-export default App;
