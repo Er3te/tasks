@@ -21,7 +21,6 @@ export function TwoDice(): React.JSX.Element {
     function rollLeft(): void {
         setLeftDie(d6());
     }
-
     return (
         <div>
             <Button onClick={rollRight}>Roll Right</Button>

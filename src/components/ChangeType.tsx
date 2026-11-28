@@ -4,7 +4,7 @@ import { QuestionType } from "../interfaces/question";
 
 export function ChangeType(): React.JSX.Element {
     const [questionType, setQuestionType] = useState<QuestionType>(
-        "multiple_choice_question",
+        "short_answer_question",
     );
 
     function changeQuestion() {
@@ -18,7 +18,11 @@ export function ChangeType(): React.JSX.Element {
     return (
         <div>
             <Button onClick={changeQuestion}>Change Type</Button>
-            <span>{questionType}</span>
+            <span>
+                {questionType === "short_answer_question" ?
+                    "Short Answer"
+                :   "Multiple Choice"}
+            </span>
         </div>
     );
 }
